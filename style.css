@@ -4,18 +4,27 @@
     padding: 50px;
     justify-content: flex-start;
     align-items: center;
-    width: 960px;
-    height: 960px;
+    width: 500px;
+    height: 500px;
 }
 
 .grid-row {
     display: flex;
+    flex:1;
+    width:100%;
 }
 
 .grid-item {
     background-color: bisque;
-    width:25px;
-    height:25px;
+    flex:1;
+    min-height:1px;
+    min-width:1px;
     border:1px solid black;
     box-sizing: border-box;
+}
+
+.master-container {
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
 }
